@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>História da Computação e Git</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <button id="change-theme" class="theme-toggle">🌙</button>
+    <div class="background-container">
+        <img src="https://i.gifer.com/PDB.gif" alt="Background" class="background-gif">
+    </div>
+
+    <div class="container">
+        <header>
+            <h1>História da Computação e Git</h1>
+            <button id="toggle-section">Alternar Conteúdo</button>
+        </header>
+
+        <main>
+            <section id="git-section">
+                <h2>Git: Sistema de Controle de Versão</h2>
+                <div class="git-commands">
+                    <h3>Comandos Principais do Git</h3>
+                    <div class="command-card">
+                        <h4>git init</h4>
+                        <p>Inicia um novo repositório Git</p>
+                    </div>
+                    <div class="command-card">
+                        <h4>git status</h4>
+                        <p>Mostra o estado atual dos arquivos</p>
+                    </div>
+                    <div class="command-card">
+                        <h4>git add</h4>
+                        <p>Adiciona arquivos à área de staging</p>
+                    </div>
+                    <div class="command-card">
+                        <h4>git commit</h4>
+                        <p>Salva as alterações no repositório</p>
+                    </div>
+                    <div class="command-card">
+                        <h4>git push</h4>
+                        <p>Envia alterações para o repositório remoto</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="history-section" style="display: none;">
+                <h2>História da Computação</h2>
+                
+                <div class="history-card">
+                    <h3>Cartões Perfurados</h3>
+                    <p>Os primeiros programas de computador eram escritos em cartões perfurados, onde cada cartão representava uma instrução. Esta tecnologia foi amplamente utilizada pela IBM nas décadas de 1960 e 1970.</p>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/5/58/IBM_card_storage.jpg" alt="Cartões IBM" class="history-img">
+                </div>
+
+                <div class="history-card">
+                    <h3>Linus Torvalds</h3>
+                    <p>Criador do Linux e do Git, Linus Torvalds revolucionou o mundo do software livre. Em 1991, criou o Linux como um projeto pessoal, e em 2005, desenvolveu o Git para gerenciar o desenvolvimento do kernel do Linux.</p>
+                </div>
+
+                <div class="company-section">
+                    <div class="company-card">
+                        <h3>IBM</h3>
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/IBM_logo.svg" alt="Logo IBM" class="company-logo">
+                        <p>A IBM foi pioneira na computação, criando o IBM 704 em 1954, um dos primeiros computadores comerciais.</p>
+                    </div>
+
+                    <div class="company-card">
+                        <h3>Apple</h3>
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg" alt="Logo Apple" class="company-logo">
+                        <p>A Apple revolucionou a computação pessoal com o Apple I em 1976 e o Macintosh em 1984.</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script>
+        document.getElementById("toggle-section").addEventListener("click", function() {
+            const gitSection = document.getElementById("git-section");
+            const historySection = document.getElementById("history-section");
+
+            if (gitSection.style.display === "none") {
+                gitSection.style.display = "block";
+                historySection.style.display = "none";
+            } else {
+                gitSection.style.display = "none";
+                historySection.style.display = "block";
+            }
+        });
+    </script>
+</body>
+</html> 
