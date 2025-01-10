@@ -18,7 +18,213 @@
             <button id="toggle-section">Alternar Conteúdo</button>
         </header>
 
+        <section id="git-intro">
+            <h2>O que é o Git?</h2>
+            <p>O Git é um sistema de controle de versão distribuído, usado principalmente no desenvolvimento de software para rastrear mudanças no código ao longo do tempo. Ele ajuda equipes a colaborarem em projetos, mantendo um histórico detalhado de todas as alterações realizadas.</p>
+            
+            <div class="git-features">
+                <div class="feature-card">
+                    <h3>Controle de versão</h3>
+                    <p>Permite gerenciar diferentes versões do mesmo projeto (exemplo: versão 1.0, 2.0, etc.).</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Sistema Distribuído</h3>
+                    <p>Todos os desenvolvedores possuem uma cópia completa do repositório, o que garante maior segurança e flexibilidade.</p>
+                </div>
+            </div>
+
+            <h3>Para que serve o Git?</h3>
+            <div class="git-uses">
+                <div class="use-card">
+                    <h4>Colaboração em equipe</h4>
+                    <ul>
+                        <li>Permite que vários desenvolvedores trabalhem simultaneamente no mesmo projeto.</li>
+                        <li>Facilita a resolução de conflitos quando diferentes partes do código são modificadas.</li>
+                    </ul>
+                </div>
+                <div class="use-card">
+                    <h4>Histórico de mudanças</h4>
+                    <ul>
+                        <li>Você pode ver quem fez uma alteração, o que foi alterado e quando.</li>
+                        <li>Caso algo dê errado, é possível reverter o projeto para uma versão anterior.</li>
+                    </ul>
+                </div>
+                <div class="use-card">
+                    <h4>Backup seguro</h4>
+                    <ul>
+                        <li>Mesmo que o servidor remoto tenha problemas, os repositórios locais mantêm uma cópia completa do projeto.</li>
+                    </ul>
+                </div>
+                <div class="use-card">
+                    <h4>Automação e integração contínua</h4>
+                    <ul>
+                        <li>Usado com ferramentas como GitHub Actions, Jenkins e GitLab CI/CD para automatizar testes, deploys e outras tarefas.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <h3>Locais onde o Git pode ser usado</h3>
+            <div class="git-platforms">
+                <div class="platform-card">
+                    <h4>GitHub</h4>
+                    <ul>
+                        <li>O mais famoso serviço baseado em Git.</li>
+                        <li>Ideal para colaboração aberta e projetos de código aberto.</li>
+                        <li>Recursos: Pull Requests, Actions (para CI/CD), projetos privados.</li>
+                    </ul>
+                </div>
+                <div class="platform-card">
+                    <h4>GitLab</h4>
+                    <ul>
+                        <li>Similar ao GitHub, mas oferece integração contínua (CI/CD) nativa.</li>
+                        <li>Muito usado por empresas para desenvolvimento privado.</li>
+                    </ul>
+                </div>
+                <div class="platform-card">
+                    <h4>Bitbucket</h4>
+                    <ul>
+                        <li>Plataforma baseada em Git criada pela Atlassian (mesma empresa do Jira).</li>
+                        <li>Suporte nativo para integração com outros produtos Atlassian.</li>
+                    </ul>
+                </div>
+                <div class="platform-card">
+                    <h4>Serviços próprios (Self-hosted)</h4>
+                    <ul>
+                        <li>Empresas podem hospedar seus próprios repositórios Git com ferramentas como:</li>
+                        <li>Gitea: Leve e fácil de usar.</li>
+                        <li>GitLab Self-hosted: Versão local do GitLab.</li>
+                        <li>Azure DevOps: Para equipes que já utilizam os serviços da Microsoft.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="git-example">
+                <h3>Exemplo Prático com GitHub</h3>
+                <div class="code-block">
+                    <p><strong>1. Criar um repositório no GitHub:</strong></p>
+                    <ul>
+                        <li>Vá até GitHub e clique em "Novo Repositório".</li>
+                        <li>Dê um nome ao repositório (exemplo: meu-projeto).</li>
+                    </ul>
+                    
+                    <p><strong>2. Clonar o repositório:</strong></p>
+                    <code>git clone &lt;URL-DO-REPOSITORIO&gt;</code>
+                    
+                    <p><strong>3. Adicionar um arquivo, fazer o commit e enviar:</strong></p>
+                    <code>
+                        echo "Hello Git!" > arquivo.txt<br>
+                        git add .<br>
+                        git commit -m "Adiciona arquivo inicial"<br>
+                        git push origin main
+                    </code>
+                </div>
+            </div>
+        </section>
+
         <main>
+            <section id="git-intro">
+                <h2>O que é o Git?</h2>
+                <p>O Git é um sistema de controle de versão distribuído, usado principalmente no desenvolvimento de software para rastrear mudanças no código ao longo do tempo. Ele ajuda equipes a colaborarem em projetos, mantendo um histórico detalhado de todas as alterações realizadas.</p>
+                
+                <div class="git-features">
+                    <div class="feature-card">
+                        <h3>Controle de versão</h3>
+                        <p>Permite gerenciar diferentes versões do mesmo projeto (exemplo: versão 1.0, 2.0, etc.).</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3>Sistema Distribuído</h3>
+                        <p>Todos os desenvolvedores possuem uma cópia completa do repositório, o que garante maior segurança e flexibilidade.</p>
+                    </div>
+                </div>
+
+                <h3>Para que serve o Git?</h3>
+                <div class="git-uses">
+                    <div class="use-card">
+                        <h4>Colaboração em equipe</h4>
+                        <ul>
+                            <li>Permite que vários desenvolvedores trabalhem simultaneamente no mesmo projeto.</li>
+                            <li>Facilita a resolução de conflitos quando diferentes partes do código são modificadas.</li>
+                        </ul>
+                    </div>
+                    <div class="use-card">
+                        <h4>Histórico de mudanças</h4>
+                        <ul>
+                            <li>Você pode ver quem fez uma alteração, o que foi alterado e quando.</li>
+                            <li>Caso algo dê errado, é possível reverter o projeto para uma versão anterior.</li>
+                        </ul>
+                    </div>
+                    <div class="use-card">
+                        <h4>Backup seguro</h4>
+                        <ul>
+                            <li>Mesmo que o servidor remoto tenha problemas, os repositórios locais mantêm uma cópia completa do projeto.</li>
+                        </ul>
+                    </div>
+                    <div class="use-card">
+                        <h4>Automação e integração contínua</h4>
+                        <ul>
+                            <li>Usado com ferramentas como GitHub Actions, Jenkins e GitLab CI/CD para automatizar testes, deploys e outras tarefas.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <h3>Locais onde o Git pode ser usado</h3>
+                <div class="git-platforms">
+                    <div class="platform-card">
+                        <h4>GitHub</h4>
+                        <ul>
+                            <li>O mais famoso serviço baseado em Git.</li>
+                            <li>Ideal para colaboração aberta e projetos de código aberto.</li>
+                            <li>Recursos: Pull Requests, Actions (para CI/CD), projetos privados.</li>
+                        </ul>
+                    </div>
+                    <div class="platform-card">
+                        <h4>GitLab</h4>
+                        <ul>
+                            <li>Similar ao GitHub, mas oferece integração contínua (CI/CD) nativa.</li>
+                            <li>Muito usado por empresas para desenvolvimento privado.</li>
+                        </ul>
+                    </div>
+                    <div class="platform-card">
+                        <h4>Bitbucket</h4>
+                        <ul>
+                            <li>Plataforma baseada em Git criada pela Atlassian (mesma empresa do Jira).</li>
+                            <li>Suporte nativo para integração com outros produtos Atlassian.</li>
+                        </ul>
+                    </div>
+                    <div class="platform-card">
+                        <h4>Serviços próprios (Self-hosted)</h4>
+                        <ul>
+                            <li>Empresas podem hospedar seus próprios repositórios Git com ferramentas como:</li>
+                            <li>Gitea: Leve e fácil de usar.</li>
+                            <li>GitLab Self-hosted: Versão local do GitLab.</li>
+                            <li>Azure DevOps: Para equipes que já utilizam os serviços da Microsoft.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="git-example">
+                    <h3>Exemplo Prático com GitHub</h3>
+                    <div class="code-block">
+                        <p><strong>1. Criar um repositório no GitHub:</strong></p>
+                        <ul>
+                            <li>Vá até GitHub e clique em "Novo Repositório".</li>
+                            <li>Dê um nome ao repositório (exemplo: meu-projeto).</li>
+                        </ul>
+                        
+                        <p><strong>2. Clonar o repositório:</strong></p>
+                        <code>git clone &lt;URL-DO-REPOSITORIO&gt;</code>
+                        
+                        <p><strong>3. Adicionar um arquivo, fazer o commit e enviar:</strong></p>
+                        <code>
+                            echo "Hello Git!" > arquivo.txt<br>
+                            git add .<br>
+                            git commit -m "Adiciona arquivo inicial"<br>
+                            git push origin main
+                        </code>
+                    </div>
+                </div>
+            </section>
+
             <section id="git-section">
                 <h2>Git: Sistema de Controle de Versão</h2>
                 <div class="git-commands">
@@ -77,19 +283,6 @@
         </main>
     </div>
 
-    <script>
-        document.getElementById("toggle-section").addEventListener("click", function() {
-            const gitSection = document.getElementById("git-section");
-            const historySection = document.getElementById("history-section");
-
-            if (gitSection.style.display === "none") {
-                gitSection.style.display = "block";
-                historySection.style.display = "none";
-            } else {
-                gitSection.style.display = "none";
-                historySection.style.display = "block";
-            }
-        });
-    </script>
+    <script src="script.js"></script>
 </body>
 </html> 
