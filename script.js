@@ -86,7 +86,7 @@ document.addEventListener('DOMContentLoaded', function() {
     historicalImages.forEach(img => {
         const card = `
             <div class="image-card">
-                <img src="${img.url}" alt="${img.title}" onerror="this.src='https://via.placeholder.com/400x300?text=Imagem+Histórica'">
+                <img src="${img.url}" alt="${img.title}" onerror="this.src='https://media.gettyimages.com/id/532505754/photo/linux-designer-linus-torvalds.jpg?s=612x612&w=gi&k=20&c=TEVHSR30QudwdBWWL362qBt6cRgs-zibgwp90hGWi2k='">
                 <div class="card-content">
                     <h3>${img.title}</h3>
                     <p>${img.description}</p>
