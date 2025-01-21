@@ -421,3 +421,92 @@ li {
     margin: 20px auto;
     max-width: 1000px;
 }
+
+.history-timeline {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.timeline-item {
+    flex: 1;
+    min-width: 250px;
+    max-width: 300px;
+    text-align: center;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.timeline-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.timeline-item h3 {
+    color: #333;
+    margin: 10px 0;
+}
+
+.timeline-item p {
+    color: #666;
+}
+
+/* Efeito de hover nas imagens */
+.timeline-item img:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+/* Responsividade melhorada */
+@media (max-width: 768px) {
+    .timeline-item {
+        min-width: 250px;
+        margin: 10px;
+    }
+    
+    .history-timeline {
+        padding: 20px;
+        gap: 20px;
+    }
+}
+
+.hidden {
+    display: none;
+}
+
+.image-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.history-image {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.history-image:hover {
+    transform: scale(1.05);
+}
+
+.history-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.history-image p {
+    margin-top: 10px;
+    font-size: 0.9em;
+    color: #fff;
+}

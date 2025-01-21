@@ -36,9 +36,9 @@ const themes = [
 
 // Aguarda o DOM estar completamente carregado
 document.addEventListener('DOMContentLoaded', function() {
-    const toggleButton = document.getElementById("toggle-section");
-    const mainContent = document.querySelector("main");
-    const gitIntro = document.getElementById("git-intro");
+    const toggleButton = document.getElementById('toggle-section');
+    const computerHistory = document.getElementById('computer-history');
+    const gitIntro = document.getElementById('git-intro');
     
     // Criar seção de imagens históricas
     const imageSection = document.createElement('section');
@@ -48,22 +48,22 @@ document.addEventListener('DOMContentLoaded', function() {
     // Array com as informações das imagens
     const historicalImages = [
         {
-            url: "https://pplware.sapo.pt/wp-content/uploads/2017/10/linus-torvalds.jpg",
+            url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSY198fqWOoqcRq822RQ0TSsqcwkPWj-TgECw&s",
             title: "Linus Torvalds",
             description: "Criador do Linux e Git, revolucionou o mundo do software livre"
         },
         {
-            url: "https://i0.wp.com/www.sciencenews.org/wp-content/uploads/2022/01/100-computing_milestones_1946-eniac.jpg",
+            url: "https://www.cnnbrasil.com.br/wp-content/uploads/sites/12/2021/06/26776_1798DEE935286D54.jpg?w=1024",
             title: "ENIAC",
             description: "Primeiro Computador Eletrônico (1946), ocupava uma sala inteira"
         },
         {
-            url: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Used_Punchcard_%285151286161%29.jpg/640px-Used_Punchcard_%285151286161%29.jpg",
+            url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSbS5s30nQfyo5qD6P6qavpH5rTiKuOYysrg&s",
             title: "Cartões Perfurados",
             description: "Método de programação usado nas décadas de 1960-70"
         },
         {
-            url: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Unit%C3%A0_centrale_-_Museo_scienza_tecnologia_Milano_D1260_foto.jpg/280px-Unit%C3%A0_centrale_-_Museo_scienza_tecnologia_Milano_D1260_foto.jpg",
+            url: "https://preview.redd.it/wxxklocvh2q81.png?auto=webp&s=3849131783bf9e4ab101e30ab0aab7ab6c7c5f2e",
             title: "IBM 704",
             description: "Um dos primeiros computadores comerciais (1954)"
         },
@@ -79,6 +79,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     ];
 
+
     // Criar os cards de imagens
     const imageGrid = document.createElement('div');
     imageGrid.className = 'image-grid';
@@ -86,7 +87,7 @@ document.addEventListener('DOMContentLoaded', function() {
     historicalImages.forEach(img => {
         const card = `
             <div class="image-card">
-                <img src="${img.url}" alt="${img.title}" onerror="this.src='https://media.gettyimages.com/id/532505754/photo/linux-designer-linus-torvalds.jpg?s=612x612&w=gi&k=20&c=TEVHSR30QudwdBWWL362qBt6cRgs-zibgwp90hGWi2k='">
+        <img src="${img.url}" alt="${img.title}"='index.html'">
                 <div class="card-content">
                     <h3>${img.title}</h3>
                     <p>${img.description}</p>
@@ -97,33 +98,56 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     imageSection.appendChild(imageGrid);
-    mainContent.appendChild(imageSection);
+    computerHistory.appendChild(imageSection);
 
-    // Função para alternar o conteúdo
-    toggleButton.addEventListener("click", function() {
-        const allSections = document.querySelectorAll('main section');
+    toggleButton.addEventListener('click', function() {
+        computerHistory.classList.toggle('hidden');
+        gitIntro.classList.toggle('hidden');
         
-        if (imageSection.style.display === 'none') {
-            // Esconder todo o conteúdo do Git
-            allSections.forEach(section => {
-                if (section.id !== 'historical-images') {
-                    section.style.display = 'none';
-                }
-            });
-            // Mostrar apenas as imagens
-            imageSection.style.display = 'block';
-            toggleButton.textContent = 'Voltar ao Conteúdo';
+        // Atualiza o texto do botão
+        if (computerHistory.classList.contains('hidden')) {
+            toggleButton.textContent = 'Ver História da Computação';
         } else {
-            // Esconder as imagens
-            imageSection.style.display = 'none';
-            // Mostrar o conteúdo do Git
-            allSections.forEach(section => {
-                if (section.id !== 'historical-images') {
-                    section.style.display = 'block';
-                }
-            });
-            toggleButton.textContent = 'Ver Imagens Históricas';
+            toggleButton.textContent = 'Ver Sobre Git';
         }
+    });
+
+    const computingHistoryContent = `
+        <h2>História da Computação</h2>
+        <div class="history-timeline">
+            <div class="timeline-item">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Eniac.jpg/300px-Eniac.jpg" alt="ENIAC">
+                <h3>1946 - ENIAC</h3>
+                <p>Primeiro computador eletrônico de propósito geral</p>
+            </div>
+            <div class="timeline-item">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Intel_4004.jpg/220px-Intel_4004.jpg" alt="Intel 4004">
+                <h3>1971 - Intel 4004</h3>
+                <p>Primeiro microprocessador comercial</p>
+            </div>
+            <div class="timeline-item">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/IBM_PC_5150.jpg/300px-IBM_PC_5150.jpg" alt="IBM PC">
+                <h3>1981 - IBM PC</h3>
+                <p>Lançamento do PC que revolucionou a computação pessoal</p>
+            </div>
+            <div class="timeline-item">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Crystal_Project_computer.png/220px-Crystal_Project_computer.png" alt="Internet">
+                <h3>1991 - World Wide Web</h3>
+                <p>Tim Berners-Lee cria a World Wide Web</p>
+            </div>
+        </div>
+    `;
+
+    let showingGit = true;
+
+    toggleButton.addEventListener('click', function() {
+        if (showingGit) {
+            gitIntro.innerHTML = computingHistoryContent;
+            toggleButton.textContent = "Ver Git";
+        } else {
+            location.reload(); // Recarrega a página para mostrar o conteúdo original do Git
+        }
+        showingGit = !showingGit;
     });
 });
 
