@@ -48,22 +48,22 @@ document.addEventListener('DOMContentLoaded', function() {
     // Array com as informações das imagens
     const historicalImages = [
         {
-            url: "https://cdn.britannica.com/99/124299-050-4B4D509F/Linus-Torvalds-2012.jpg?w=400&h=300&c=crop",
+            url: "https://pplware.sapo.pt/wp-content/uploads/2017/10/linus-torvalds.jpg",
             title: "Linus Torvalds",
             description: "Criador do Linux e Git, revolucionou o mundo do software livre"
         },
         {
-            url: "https://www.cnnbrasil.com.br/wp-content/uploads/sites/12/2021/06/26776_1798DEE935286D54.jpg",
+            url: "https://i0.wp.com/www.sciencenews.org/wp-content/uploads/2022/01/100-computing_milestones_1946-eniac.jpg",
             title: "ENIAC",
             description: "Primeiro Computador Eletrônico (1946), ocupava uma sala inteira"
         },
         {
-            url: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Used_Punchcard_%285151286161%29.jpg/300px-Used_Punchcard_%285151286161%29.jpg",
+            url: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Used_Punchcard_%285151286161%29.jpg/640px-Used_Punchcard_%285151286161%29.jpg",
             title: "Cartões Perfurados",
             description: "Método de programação usado nas décadas de 1960-70"
         },
         {
-            url: "https://time.graphics/uploadedFiles/500/09/50/0950698cce300961a77ef4e19e070d6c.jpg",
+            url: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Unit%C3%A0_centrale_-_Museo_scienza_tecnologia_Milano_D1260_foto.jpg/280px-Unit%C3%A0_centrale_-_Museo_scienza_tecnologia_Milano_D1260_foto.jpg",
             title: "IBM 704",
             description: "Um dos primeiros computadores comerciais (1954)"
         },
